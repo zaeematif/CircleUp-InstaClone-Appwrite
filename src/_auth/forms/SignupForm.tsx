@@ -23,7 +23,7 @@ const SignupForm = () => {
   const navigate = useNavigate();
   const { toast } = useToast();
 
-  const {checkAuthUser, isLoading: isUserLoading} = useUserContext();
+  const {checkAuthUser} = useUserContext();
 
   const { mutateAsync: createUserAccount, isPending: isCreatingAccount } =
   useCreateUserAccount();
